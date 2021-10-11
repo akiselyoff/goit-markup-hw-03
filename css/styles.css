@@ -1,0 +1,198 @@
+:root {
+  --active-text-color: #2196f3;
+  --prime-text-color: #757575;
+  --secondary-text-color: #212121;
+  --btn-text-color: #ffffff;
+  --hero-btn-active-color: #188ce8;
+  --prime-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--prime-background-color);
+  color: var(--secondary-text-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.btn {
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/************header*****************************/
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.logo span {
+  color: var(--active-text-color);
+}
+.nav-list .link,
+.contacts .link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-list .link {
+  color: var(--secondary-text-color);
+}
+.contacts .link {
+  color: var(--prime-text-color);
+}
+.nav-list > .active > .link {
+  color: var(--active-text-color);
+}
+.nav-list .link:hover,
+.nav-list .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--active-text-color);
+}
+
+/*****************main index*******************/
+.hero {
+  background-color: var(--footer-background-color);
+  color: var(--btn-text-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  letter-spacing: 0.06em;
+  background-color: var(--active-text-color);
+  color: var(--btn-text-color);
+}
+.hero .btn:hover,
+.hero .btn:focus {
+  background-color: var(--hero-btn-active-color);
+}
+
+.features-list-item .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-list-item .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--prime-text-color);
+}
+.we-doing > .title,
+.team > .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team {
+  background-color: var(--secondary-background-color);
+}
+.team-list-item {
+  background-color: var(--prime-background-color);
+}
+.team-list-item .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-list-item .position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--prime-background-color);
+  color: var(--prime-text-color);
+}
+
+/********************main portfolio**********************/
+.filter .btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: none;
+}
+.filter .btn:hover,
+.filter .btn:focus,
+.btn.active {
+  background-color: var(--active-text-color);
+  color: var(--btn-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.project-item {
+  background-color: var(--prime-background-color);
+  border: 1px solid #eeeeee;
+}
+.project-item .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-item .project-type {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--prime-text-color);
+}
+/*************************footer*************************/
+.footer {
+  background-color: var(--footer-background-color);
+}
+.footer .logo {
+  color: var(--btn-text-color);
+}
+.address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--btn-text-color);
+}
