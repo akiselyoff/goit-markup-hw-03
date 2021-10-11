@@ -13,7 +13,17 @@ body {
   background-color: var(--prime-background-color);
   color: var(--secondary-text-color);
 }
-.list {
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.section {
+  padding: 94px 0;
+}
+.container {
+  width: 1200px;
+}
+ul {
   list-style: none;
 }
 .link {
@@ -48,7 +58,7 @@ body {
   color: var(--active-text-color);
 }
 .nav-list .link,
-.contacts .link {
+.contacts-list .link {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -58,7 +68,7 @@ body {
 .nav-list .link {
   color: var(--secondary-text-color);
 }
-.contacts .link {
+.contacts-list .link {
   color: var(--prime-text-color);
 }
 .nav-list > .active > .link {
@@ -66,8 +76,8 @@ body {
 }
 .nav-list .link:hover,
 .nav-list .link:focus,
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-list .link:hover,
+.contacts-list .link:focus {
   color: var(--active-text-color);
 }
 
@@ -114,8 +124,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--prime-text-color);
 }
-.we-doing > .title,
-.team > .title {
+.we-doing .title,
+.team .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
