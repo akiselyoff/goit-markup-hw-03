@@ -22,9 +22,14 @@ header {
 }
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -83,14 +88,16 @@ ul {
 
 /*****************main index*******************/
 .hero {
+  text-align: center;
   background-color: var(--footer-background-color);
   color: var(--btn-text-color);
 }
 .hero-title {
+  width: 696px;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -110,8 +117,17 @@ ul {
 .hero .btn:focus {
   background-color: var(--hero-btn-active-color);
 }
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+.features-list-item {
+  width: 270px;
+}
 
 .features-list-item .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -124,21 +140,48 @@ ul {
   letter-spacing: 0.03em;
   color: var(--prime-text-color);
 }
+
+.features-list-item .text {
+  margin-bottom: 0;
+}
 .we-doing .title,
 .team .title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.we-doing-list {
+  display: flex;
+  justify-content: space-between;
+}
+.we-doing-list-item > img {
+  display: block;
+}
+
 .team {
   background-color: var(--secondary-background-color);
 }
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
 .team-list-item {
+  width: 270px;
+  padding-bottom: 30px;
   background-color: var(--prime-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-item > img {
+  margin-bottom: 30px;
 }
 .team-list-item .title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -146,6 +189,7 @@ ul {
   letter-spacing: 0.03em;
 }
 .team-list-item .position {
+  margin: 0 auto;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
