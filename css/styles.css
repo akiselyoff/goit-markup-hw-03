@@ -326,6 +326,7 @@ ul {
 .footer .contacts-list {
   display: block;
 }
+
 .footer .logo {
   margin-bottom: 20px;
   color: var(--btn-text-color);
@@ -340,4 +341,7 @@ ul {
 }
 .footer .contacts-list .item:first-child {
   margin: 0 0 9px 0;
+}
+.footer .contacts-list .link {
+  padding: 0;
 }
