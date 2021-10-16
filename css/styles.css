@@ -71,6 +71,8 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo span {
   color: var(--active-text-color);
@@ -80,6 +82,9 @@ ul {
 }
 .nav-list .link,
 .contacts-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -90,9 +95,6 @@ ul {
   margin-left: 50px;
 }
 .nav-list .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--secondary-text-color);
 }
 .nav + .contacts-list {
@@ -102,8 +104,6 @@ ul {
   margin-right: 50px;
 }
 .contacts-list .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--prime-text-color);
 }
 .nav-list > .active > .link {
@@ -118,15 +118,15 @@ ul {
 
 /*****************main index*******************/
 .hero {
+  padding: 200px 0;
   text-align: center;
   background-color: var(--footer-background-color);
   color: var(--btn-text-color);
 }
-.hero > .container {
-  padding: 106px 267px;
-}
+
 .hero-title {
   margin: 0 auto 30px;
+  padding: 0 267px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -246,7 +246,7 @@ ul {
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .filter > .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -261,6 +261,7 @@ ul {
   letter-spacing: 0.03em;
   border-radius: 4px;
   border: none;
+  padding: 6px 22px;
 }
 .filter .btn:hover,
 .filter .btn:focus,
@@ -282,7 +283,6 @@ ul {
   margin-bottom: 30px;
 
   background-color: var(--prime-background-color);
-  border: 1px solid #eeeeee;
 }
 .project-item:nth-child(3n) {
   margin-right: 0;
@@ -297,6 +297,9 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .project-item .title {
   margin-top: 0;
@@ -323,25 +326,35 @@ ul {
   display: flex;
   flex-direction: column;
 }
-.footer .contacts-list {
-  display: block;
-}
 
 .footer .logo {
   margin-bottom: 20px;
   color: var(--btn-text-color);
 }
 .address {
-  margin-bottom: 9px;
   font-size: 14px;
   font-style: normal;
+  font-weight: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.location {
+  margin-top: 0;
+  margin-bottom: 9px;
+
   color: var(--btn-text-color);
+}
+.footer .contacts-list {
+  display: block;
 }
 .footer .contacts-list .item:first-child {
   margin: 0 0 9px 0;
 }
 .footer .contacts-list .link {
   padding: 0;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
 }
